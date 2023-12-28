@@ -4,6 +4,8 @@ import 'package:flutter/material.dart';
 import '../../../../core/theming/styles.dart';
 
 class GetStartedButton extends StatelessWidget {
+  const GetStartedButton({super.key});
+
   @override
   Widget build(BuildContext context) {
     return TextButton(

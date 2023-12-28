@@ -23,7 +23,7 @@ class MyApp extends StatelessWidget {
             primaryColor: MyColors.mainBlue,
             scaffoldBackgroundColor: MyColors.white),
         debugShowCheckedModeBanner: false,
-        initialRoute: Routes.onBoardingPage,
+        initialRoute: Routes.splashPage,
         onGenerateRoute: appRouter.generateRoute,
       ),
     );
