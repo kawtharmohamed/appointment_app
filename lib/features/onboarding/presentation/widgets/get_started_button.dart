@@ -1,3 +1,6 @@
+import 'package:appointment_app/core/helpers/extentions.dart';
+import 'package:appointment_app/core/routing/app_router.dart';
+import 'package:appointment_app/core/routing/routes.dart';
 import 'package:appointment_app/core/theming/colors.dart';
 import 'package:flutter/material.dart';
 
@@ -9,7 +12,9 @@ class GetStartedButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return TextButton(
-        onPressed: () {},
+        onPressed: () {
+          context.pushNamed(Routes.loginPage);
+        },
         style: ButtonStyle(
             backgroundColor: MaterialStateProperty.all(MyColors.mainBlue),
             tapTargetSize: MaterialTapTargetSize.shrinkWrap,
@@ -19,7 +24,7 @@ class GetStartedButton extends StatelessWidget {
                 MaterialStateProperty.all(const Size(double.infinity, 55))),
         child: Text(
           "Get Started",
-          style: TextStyles.font16White500Weight,
+          style: TextStyles.font16WhiteMedium,
         ));
   }
 }

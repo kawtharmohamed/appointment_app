@@ -17,6 +17,7 @@ class SplashPage extends StatelessWidget {
         ),
       ),
       nextScreen: const OnBoardingPage(),
+      duration: 1000,
     );
   }
 }
