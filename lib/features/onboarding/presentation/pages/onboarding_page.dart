@@ -28,7 +28,7 @@ class OnBoardingPage extends StatelessWidget {
                     "with Docdoc to get a new experience." , style: TextStyles.font13GreyRegular,
                   textAlign: TextAlign.center,),
                SizedBox(height: 20.h,),
-               GetStartedButton(),
+               const GetStartedButton(),
               ],),
            )
           ],

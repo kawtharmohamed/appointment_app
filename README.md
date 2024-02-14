@@ -1,6 +1,10 @@
 # appointment_app
 
 A new Flutter project.
+# build files
+```
+flutter pub run build_runner build --delete-conflicting-outputs
+```
 
 ## Getting Started
 
