@@ -25,4 +25,14 @@ class AppRegex{
   static bool hasMinLength ( String password){
     return RegExp(r'.{8,}').hasMatch(password);
   }
+  static bool isPhoneValid(String phone){
+    return RegExp(
+      r'(010|011|012|015)[0-9]{8}$').hasMatch(phone);
+  }
+  static bool isNameValid(String name){
+    return RegExp(
+      r'^[a-z A-Z]+$').hasMatch(
+      name
+      );
+  }
 }
